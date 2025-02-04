@@ -1,50 +1,70 @@
-# Welcome to your Expo app 👋
+# Planetas App 🌌
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicación móvil para consultar información detallada sobre los planetas del sistema solar.
 
-## Get started
+## 💡 Tecnologías y Dependencias
 
-1. Install dependencies
+- **Expo:** Framework para React Native que simplifica el desarrollo y despliegue de aplicaciones móviles.
+- **APIs Utilizadas:**
+  - [Le Systeme Solaire API](https://api.le-systeme-solaire.net): Proporciona datos científicos de los planetas.
+  - [Unsplash API](https://api.unsplash.com): Permite obtener imágenes de alta calidad de los planetas.
+- **Almacenamiento Local:** `@react-native-async-storage/async-storage` para gestionar los planetas favoritos.
 
-   ```bash
-   npm install
-   ```
+## 🚀 Instalación y Ejecución
 
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+- Cambie el nombre del archivo **.env.local** a **.env** y pegue el codigo enviado al correo donde se indica.
 
 ```bash
-npm run reset-project
+# Clonar el repositorio
+git clone https://github.com/DaveB4r/planets.git
+
+# Acceder al directorio del proyecto
+cd planetas
+
+# Instalar dependencias
+npm install
+
+# Iniciar la aplicación
+npm start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📊 Estructura del Proyecto
 
-## Learn more
+```
+planetas/
+├── app/                    # Carpeta principal de la aplicación
+│   └── (tabs)/             # Pestañas principales de navegación
+├── assets/                 # Recursos estáticos (imágenes, fuentes)
+│   ├── fonts/              # Fuentes personalizadas
+│   └── images/             # Iconos y logotipos
+├── components/             # Componentes reutilizables (cards, listas)
+├── constants/              # Variables de configuración (temas, colores)
+├── hooks/                  # Hooks personalizados (gestión de temas)
+└── provider/               # Contexto de la aplicación (manejo de estados y AsyncStorage)
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🌐 Características Principales
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- **Listado de Planetas:** Visualización de todos los planetas del sistema solar.
+- **Detalles del Planeta:** Al seleccionar un planeta, se muestra información detallada.
+- **Favoritos:** Marcar planetas como favoritos usando la funcionalidad de almacenamiento local.
 
-## Join the community
+## ⚖️ Decisiones Técnicas
 
-Join our community of developers creating universal apps.
+- **Uso de Expo:** Por su facilidad de configuración, soporte para módulos nativos y amplia documentación.
+- **AsyncStorage:** Para un almacenamiento ligero y persistente de datos locales.
+- **Estructura Modular:** Facilita la escalabilidad y el mantenimiento del código.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🚫 Problemas Conocidos
+
+- Las imágenes pueden tardar en cargarse dependiendo de la conexión a Internet.
+- La API de Unsplash tiene límites de peticiones gratuitos que podrían afectar la visualización de imágenes si se exceden.
+
+## 🙌 Contribuciones
+
+Las contribuciones son bienvenidas. Puedes abrir un *pull request* o reportar errores en la sección de *issues* del repositorio.
+
+---
+
+Desarrollado con 🚀 por DaveB4r.
+
