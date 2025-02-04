@@ -1,6 +1,7 @@
 # Planetas App 🌌
 
 Aplicación móvil para consultar información detallada sobre los planetas del sistema solar.
+- Link APK: https://expo.dev/accounts/daveb4r/projects/astronautas/builds/1e3668a7-5363-4d5b-8852-35ed8d6c0ec2
 
 ## 💡 Tecnologías y Dependencias
 
