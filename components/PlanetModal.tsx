@@ -93,55 +93,55 @@ const PlanetModal = ({ name, setShowModal }: Props) => {
                 />
               )}
               <View style={styles.info}>
-                <Text style={styles.text}>
+                <Text style={[styles.text, { color: colorText }]}>
                   <Text style={styles.title}>mass: </Text>
                   {info?.mass?.massValue}
                 </Text>
-                <Text style={styles.text}>
+                <Text style={[styles.text, { color: colorText }]}>
                   <Text style={styles.title}>volume: </Text>
                   {info?.vol?.volValue}
                 </Text>
-                <Text style={styles.text}>
+                <Text style={[styles.text, { color: colorText }]}>
                   <Text style={styles.title}>inclination: </Text>
                   {info?.inclination}
                 </Text>
-                <Text style={styles.text}>
+                <Text style={[styles.text, { color: colorText }]}>
                   <Text style={styles.title}>density: </Text>
                   {info?.density}
                 </Text>
-                <Text style={styles.text}>
+                <Text style={[styles.text, { color: colorText }]}>
                   <Text style={styles.title}>gravity: </Text>
                   {info?.gravity}
                 </Text>
-                <Text style={styles.text}>
+                <Text style={[styles.text, { color: colorText }]}>
                   <Text style={styles.title}>escape: </Text>
                   {info?.escape}
                 </Text>
-                <Text style={styles.text}>
+                <Text style={[styles.text, { color: colorText }]}>
                   <Text style={styles.title}>mean Radius: </Text>
                   {info?.meanRadius}
                 </Text>
-                <Text style={styles.text}>
+                <Text style={[styles.text, { color: colorText }]}>
                   <Text style={styles.title}>equa Radius: </Text>
                   {info?.equaRadius}
                 </Text>
-                <Text style={styles.text}>
+                <Text style={[styles.text, { color: colorText }]}>
                   <Text style={styles.title}>flattening: </Text>
                   {info?.flattening}
                 </Text>
-                <Text style={styles.text}>
+                <Text style={[styles.text, { color: colorText }]}>
                   <Text style={styles.title}>sideral Orbit: </Text>
                   {info?.sideralOrbit}
                 </Text>
-                <Text style={styles.text}>
+                <Text style={[styles.text, { color: colorText }]}>
                   <Text style={styles.title}>sideral Rotation: </Text>
                   {info?.sideralRotation}
                 </Text>
-                <Text style={styles.text}>
+                <Text style={[styles.text, { color: colorText }]}>
                   <Text style={styles.title}>average Temperature: </Text>
                   {info?.avgTemp}
                 </Text>
-                <Text style={styles.text}>
+                <Text style={[styles.text, { color: colorText }]}>
                   <Text style={styles.title}>body type: </Text>
                   {info?.bodyType}
                 </Text>
